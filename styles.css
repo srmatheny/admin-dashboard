@@ -1,0 +1,24 @@
+
+* {
+
+}
+
+h1 {
+    color: red;
+}
+
+.layout-main {
+    color: white;
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+.card {
+    background-color: lightblue;
+    color: black;
+    border: 2px solid black;
+    padding: 0.5em;
+}
