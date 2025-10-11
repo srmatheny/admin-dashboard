@@ -5,19 +5,287 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="styles.css">
     <script src="main.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
 
 <body>
 
-    <h1>Admin Dashboard</h1>
+    <div class="grid">
+        <div class="sidebar">
+            <div class="logo-text">
+                <img src="./images/logo.svg" alt="Logo image" width="60px">
+                <h1>Dashboard</h1>
+            </div>
 
-    <div class="layout-main">
-        <div class="card">Card with content 1</div>
-        <div class="card">Card with more content and longer words</div>
-        <div class="card">Card jhbxdzjhbsd .kbdsvcjhkbdvhjksdb v jkh jhbjhb jhhj</div>
-        <div class="card">Card short</div>
+            <div class="list-items">
+
+                <div class="icon-text">
+                    <img src="./images/home.png" class="icon-black-to-white" alt="Home icon">
+                    <p>Home</p>
+                </div>
+
+                <div class="icon-text">
+                    <img src="./images/profile.png" class="icon-black-to-white" alt="Profile icon">
+                    <p>Profile</p>
+                </div>
+
+                <div class="icon-text">
+                    <img src="./images/messages.png" class="icon-black-to-white" alt="Messages icon">
+                    <p>Messages</p>
+                </div>
+
+                <div class="icon-text">
+                    <img src="./images/history.png" class="icon-black-to-white" alt="History icon">
+                    <p>History</p>
+                </div>
+
+                <div class="icon-text">
+                    <img src="./images/tasks.png" class="icon-black-to-white" alt="Tasks icon">
+                    <p>Tasks</p>
+                </div>
+
+                <div class="icon-text">
+                    <img src="./images/communities.png" class="icon-black-to-white" alt="Communities icon">
+                    <p>Communities</p>
+                </div>
+
+                <div class="list-items-bottom">
+            
+                    <div class="icon-text">
+                        <img src="./images/settings.png" class="icon-black-to-white" alt="Settings icon">
+                        <p>Settings</p>
+                    </div>
+
+                    <div class="icon-text">
+                        <img src="./images/support.png" class="icon-black-to-white" alt="Support icon">
+                        <p>Support</p>
+                    </div>
+
+                    <div class="icon-text">
+                        <img src="./images/privacy.png" class="icon-black-to-white" alt="Privacy icon">
+                        <p>Privacy</p>
+                    </div>
+            
+                </div>
+                
+            </div>
+
+        </div>
+        
+        <div class="main">
+            <div class="header">
+                <div class="navbar">
+                    
+                    <img src="./images/magnify.svg" alt="search icon">
+                    <input type="text" class="form-input">
+                    <img src="./images/bell.svg" alt="bell icon" class="bellNavBar">
+                    <img src="./images/avatar.png" id="avatar">
+                    <h3 class="profileName">Ace Freeley Gilmore</h3>
+
+                </div>
+
+                    
+
+                <div class="welcome">
+                    <div class="left">
+                        <img src="./images/avatar.png" class="avatarWelcome" alt="profile avatar">
+                    </div>
+                    <div class="right">
+                        <h5>Hi there,</h5>
+                        <h2>Ace Freeley Gilmore (@Ace)</h2>
+                    </div>
+                    <div class="btn-container">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div> 
+                
+            </div>
+
+            <!-- MAIN CONTENT -->
+            <div class="content">
+                
+                <div class="projects">
+                    <h3>Your Projects</h3>
+
+                    <!-- Section for project cards -->
+                     <div class="cards">
+                        <!-- 6 cards -->
+                        <div class="card gold-line-border">
+                            <h3>Super Cool Project</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo enim quis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Aliquam magnam maxime laborum.
+                            </p>
+                            <p class="icons">
+                                <img src="./images/star-plus-outline.svg" alt="">
+                                <img src="./images/eye-plus-outline.svg" alt="">
+                                <img src="./images/source-fork.svg" alt="">
+                            </p>
+                        </div>
+
+                        <div class="card gold-line-border">
+                            <h3>Less Cool Project</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo enim quis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Aliquam magnam maxime laborum. 
+                            </p>
+                            <p class="icons">
+                                <img src="./images/star-plus-outline.svg" alt="">
+                                <img src="./images/eye-plus-outline.svg" alt="">
+                                <img src="./images/source-fork.svg" alt="">
+                            </p>
+                        </div>
+                        
+                        <div class="card gold-line-border">
+                            <h3>Imposible App</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo enim quis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Aliquam magnam maxime laborum.
+                            </p>
+                            <p class="icons">
+                                <img src="./images/star-plus-outline.svg" alt="">
+                                <img src="./images/eye-plus-outline.svg" alt="">
+                                <img src="./images/source-fork.svg" alt="">
+                            </p>
+                        </div>
+                        
+                        <div class="card gold-line-border">
+                            <h3>Easy Peasy App</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo enim quis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Aliquam magnam maxime laborum.
+                            </p>
+                            <p class="icons">
+                                <img src="./images/star-plus-outline.svg" alt="">
+                                <img src="./images/eye-plus-outline.svg" alt="">
+                                <img src="./images/source-fork.svg" alt="">
+                            </p>
+                        </div>
+
+                        <div class="card gold-line-border">
+                            <h3>Ad Blocker</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo enim quis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Aliquam magnam maxime laborum.
+                            </p>
+                            <p class="icons">
+                                <img src="./images/star-plus-outline.svg" alt="">
+                                <img src="./images/eye-plus-outline.svg" alt="">
+                                <img src="./images/source-fork.svg" alt="">
+                            </p>
+                        </div>
+                        
+                        <div class="card gold-line-border">
+                            <h3>Money Maker</h3>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo enim quis.
+                                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                 Aliquam magnam maxime laborum.
+                            </p>
+                            <p class="icons">
+                                <img src="./images/star-plus-outline.svg" alt="">
+                                <img src="./images/eye-plus-outline.svg" alt="">
+                                <img src="./images/source-fork.svg" alt="">
+                            </p>
+                        </div>
+                     </div>
+
+                </div> 
+                
+                <!-- Side content -->
+                <div class="side-content">
+
+                    <!-- Announcements -->
+                    <div class="announcements">
+                        <h3>Announcements</h3>
+                        <div class="card">
+                            <!-- List of individual announcements -->
+
+                            <div class="announce-area">
+
+                                <div class="announce-hdr light-line-border">
+                                    Site Maintenance
+                                    <p class="announce-text">announce text some lorem syuff has to be pretty long
+                                         so it wraps in the container yada uada bada</p>
+                                </div>
+
+                                <div class="announce-hdr light-line-border">
+                                    Conmmunity Share Day
+                                    <p class="announce-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum soluta sed
+                                         eveniet dolor eaque libero cum dolorum sapiente ab.
+                                    </p>
+                                </div>
+
+                                <div class="announce-hdr">
+                                    Updated Privacy Policy
+                                    <p class="announce-text">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum soluta sed
+                                         eveniet dolor eaque libero cum dolorum sapiente ab.
+                                    </p>
+                                </div>
+                            </div>
+
+                            
+
+                        </div>
+
+                        <div class="trending">
+                            <h3>Trending</h3>
+                            <div class="card">
+                                <!-- trending area -->
+                                <div class="icon">
+                                    <img src="./images/gh-icon-1.png" alt=""\>
+                                </div>
+                                <div class="userName">
+                                    @tegan
+                                    <p class="user-desc">World Peace Builder</p>
+                                </div>
+                                
+                                <div class="icon">
+                                    <img src="./images/avatar.png" alt=""\>
+                                </div>
+                                <div class="userName">
+                                    @Ace
+                                    <p class="user-desc">Super Cool Project</p>
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/gh-icon-3.png" alt="">
+                                </div>
+                                <div class="userName">
+                                    @kendall
+                                    <p class="user-desc">Life Changing App</p>
+                                </div>
+                                <div class="icon">
+                                    <img src="./images/gh-icon-4.png" alt="">
+                                </div>
+                                <div class="userName">
+                                    @alex
+                                    <p class="user-desc">No Traffic Maker</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                        
+                    
+                
+                    
+                </div>
+            </div>    
+        </div>
     </div>
 
 
